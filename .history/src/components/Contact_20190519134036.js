@@ -16,7 +16,7 @@ class Contact extends Component {
   };
 
   render() {
-    const { name, email, phone, id } = this.props.contact;
+    const { name, email, phone } = this.props.contact;
     const { showContactInfo } = this.state;
 
     return (
