@@ -11,18 +11,13 @@ class AddContact extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  onSubmit = e => {
-    e.preventDefault();
-    console.log(this.state);
-  };
-
   render() {
     const { name, email, phone } = this.state;
     return (
       <div className="card mb-3">
         <div className="card-header">ADD CONTACT</div>
         <div className="card-body">
-          <form onSubmit={this.onSubmit}>
+          <form>
             <div className="form-group">
               <label htmlFor="name">NAME</label>
               <input
