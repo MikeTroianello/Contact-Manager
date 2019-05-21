@@ -27,7 +27,6 @@ class AddContact extends Component {
 
     dispatch({ type: "ADD_CONTACT", payload: newContact });
 
-    //CLEAR STATE
     this.setState({
       name: "",
       email: "",
