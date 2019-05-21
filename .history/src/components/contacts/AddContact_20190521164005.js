@@ -55,7 +55,7 @@ class AddContact extends Component {
                     value={name}
                     onChange={this.onChange}
                   />
-
+                 
                   <TextInputGroup
                     label="Email"
                     name="email"
@@ -80,6 +80,7 @@ class AddContact extends Component {
                   />
                 </form>
               </div>
+            </div>
             </div>
           );
         }}

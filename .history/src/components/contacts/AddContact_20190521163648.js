@@ -56,23 +56,28 @@ class AddContact extends Component {
                     onChange={this.onChange}
                   />
 
-                  <TextInputGroup
-                    label="Email"
-                    name="email"
-                    type="email"
-                    placeholder="Enter email"
-                    value={email}
-                    onChange={this.onChange}
-                  />
-
-                  <TextInputGroup
-                    label="Phone Num."
-                    name="phone"
-                    placeholder="Enter the phone number"
-                    value={phone}
-                    onChange={this.onChange}
-                  />
-
+                  <div className="form-group">
+                    <label htmlFor="email">EMAIL</label>
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-control lg"
+                      placeholder="Enter Email"
+                      value={email}
+                      onChange={this.onChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="phone">PHONE #</label>
+                    <input
+                      type="text"
+                      name="phone"
+                      className="form-control lg"
+                      placeholder="Enter Phone Number"
+                      value={phone}
+                      onChange={this.onChange}
+                    />
+                  </div>
                   <input
                     type="submit"
                     value="Add Contact"

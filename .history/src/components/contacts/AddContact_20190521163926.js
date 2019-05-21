@@ -55,7 +55,7 @@ class AddContact extends Component {
                     value={name}
                     onChange={this.onChange}
                   />
-
+                  <form onSubmit={this.onSubmit.bind(this, dispatch)}>
                   <TextInputGroup
                     label="Email"
                     name="email"
@@ -64,7 +64,7 @@ class AddContact extends Component {
                     value={email}
                     onChange={this.onChange}
                   />
-
+                  <form onSubmit={this.onSubmit.bind(this, dispatch)}>
                   <TextInputGroup
                     label="Phone Num."
                     name="phone"
@@ -79,8 +79,9 @@ class AddContact extends Component {
                     className="btn btn-light btn-block"
                   />
                 </form>
-              </div>
-            </div>
+             
+      
+          
           );
         }}
       </Consumer>
