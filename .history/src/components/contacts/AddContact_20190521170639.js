@@ -23,17 +23,14 @@ class AddContact extends Component {
     //ERROR CHECK
     if (name === "") {
       this.setState({ errors: { name: "name is required" } });
-      return;
     }
 
     if (email === "") {
       this.setState({ errors: { email: "email is required" } });
-      return;
     }
 
     if (phone === "") {
       this.setState({ errors: { phone: "phone is required" } });
-      return;
     }
 
     const newContact = {
@@ -55,7 +52,7 @@ class AddContact extends Component {
   };
 
   render() {
-    const { name, email, phone, errors } = this.state;
+    const { name, email, phone } = this.state;
 
     return (
       <Consumer>

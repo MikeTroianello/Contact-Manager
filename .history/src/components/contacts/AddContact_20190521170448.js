@@ -23,17 +23,6 @@ class AddContact extends Component {
     //ERROR CHECK
     if (name === "") {
       this.setState({ errors: { name: "name is required" } });
-      return;
-    }
-
-    if (email === "") {
-      this.setState({ errors: { email: "email is required" } });
-      return;
-    }
-
-    if (phone === "") {
-      this.setState({ errors: { phone: "phone is required" } });
-      return;
     }
 
     const newContact = {
@@ -49,13 +38,12 @@ class AddContact extends Component {
     this.setState({
       name: "",
       email: "",
-      phone: "",
-      errors: {}
+      phone: ""
     });
   };
 
   render() {
-    const { name, email, phone, errors } = this.state;
+    const { name, email, phone } = this.state;
 
     return (
       <Consumer>
@@ -72,7 +60,6 @@ class AddContact extends Component {
                     placeholder="Enter the name"
                     value={name}
                     onChange={this.onChange}
-                    error={errors.name}
                   />
 
                   <TextInputGroup
@@ -82,7 +69,6 @@ class AddContact extends Component {
                     placeholder="Enter email"
                     value={email}
                     onChange={this.onChange}
-                    error={errors.email}
                   />
 
                   <TextInputGroup
@@ -91,7 +77,6 @@ class AddContact extends Component {
                     placeholder="Enter the phone number"
                     value={phone}
                     onChange={this.onChange}
-                    error={errors.phone}
                   />
 
                   <input
