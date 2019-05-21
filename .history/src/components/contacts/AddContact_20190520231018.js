@@ -24,8 +24,6 @@ class AddContact extends Component {
       email,
       phone
     };
-
-    dispatch({ type: "ADD_CONTACT", payload: newContact });
   };
 
   render() {

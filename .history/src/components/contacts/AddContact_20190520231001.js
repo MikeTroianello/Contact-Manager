@@ -19,13 +19,10 @@ class AddContact extends Component {
     const { name, email, phone } = this.state;
 
     const newContact = {
-      id: uuid(),
       name,
       email,
       phone
     };
-
-    dispatch({ type: "ADD_CONTACT", payload: newContact });
   };
 
   render() {
