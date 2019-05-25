@@ -38,14 +38,15 @@ class AddContact extends Component {
     }
 
     const newContact = {
+      id: uuid(),
       name,
       email,
       phone
     };
 
-    axios
-      .post("http://jsonplaceholder.typicode.com/users", newContact)
-      .then(res => dispatch({ type: "ADD_CONTACT", payload: res.data }));
+    axios.post();
+
+    dispatch({ type: "ADD_CONTACT", payload: newContact });
 
     //CLEAR STATE
     this.setState({

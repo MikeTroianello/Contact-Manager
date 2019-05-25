@@ -44,7 +44,7 @@ class AddContact extends Component {
     };
 
     axios
-      .post("http://jsonplaceholder.typicode.com/users", newContact)
+      .post("http://jsonplaceholder.typicode.com/users")
       .then(res => dispatch({ type: "ADD_CONTACT", payload: res.data }));
 
     //CLEAR STATE
