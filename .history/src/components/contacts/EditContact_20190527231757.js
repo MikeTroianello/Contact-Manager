@@ -61,8 +61,6 @@ class EditContact extends Component {
       updatedContact
     );
 
-    dispatch({ type: "UPDATE_CONTACT", payload: res.data });
-
     //CLEAR STATE
     this.setState({
       name: "",
