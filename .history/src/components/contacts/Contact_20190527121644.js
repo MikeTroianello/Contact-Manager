@@ -49,15 +49,7 @@ class Contact extends Component {
                   onClick={this.onDeleteClick.bind(this, id, dispatch)}
                 />
                 <Link to={`contact/edit/${id}`}>
-                  <i
-                    className="fas fa-pencil-alt"
-                    style={{
-                      cursor: "pointer",
-                      float: "right",
-                      color: "black",
-                      marginRight: "1rem"
-                    }}
-                  />
+                  <i className="fas fa-pencil-alt" />
                 </Link>
               </h4>
               {showContactInfo && (
